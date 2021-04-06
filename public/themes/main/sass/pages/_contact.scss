@@ -1,0 +1,367 @@
+.breadcrumb {
+    background: none;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    padding: 0.6429rem 0;
+
+    &-sub-main {
+        float: left;
+
+        a {
+            color: #666;
+        }
+    }
+
+    &-sub {
+        float: left;
+        margin-left: 10px;
+
+        a {
+            color: #666;
+            font-size: 0.813rem;
+        }
+    }
+}
+
+.contact-info {
+    h1 {
+        font-size: 20px;
+        color: $primary_color;
+        font-weight: 700;
+        line-height: 1.3;
+        margin: 0 0 15px;
+    }
+
+    .title-h3 {
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0px 0 12px;
+    }
+
+    .address {
+        margin-bottom: 10px;
+    }
+
+    td:first-child {
+        padding: 5px 5px 5px 0;
+        white-space: nowrap;
+    }
+
+    td {
+        vertical-align: top;
+        padding: 5px;
+        font-size: 14px;
+    }
+}
+
+.content-contact {
+    margin-left: 10px;
+}
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+    font-size: 0.75em;
+    color: #999;
+    top: -5px;
+    -webkit-transition: all 0.225s ease;
+    transition: all 0.225s ease;
+}
+
+
+.styled-input {
+    float: left;
+    width: 293px;
+    margin: 0.5rem 0;
+    position: relative;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+    .styled-input {
+        width: 100%;
+    }
+}
+
+.styled-input label {
+    color: #999;
+    padding: 0.5rem 10px 0 10px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+
+}
+
+.__focus {
+    top: -5px !important;
+    padding: 0rem 10px -5px 10px !important;
+    font-size: 0.75em !important;
+}
+
+.styled-input.wide {
+    width: 650px;
+    max-width: 100%;
+}
+
+.contact-input,
+textarea {
+    padding: 15px;
+    border: 0;
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    color: black !important;
+    border-radius: 4px;
+}
+
+input:focus,
+textarea:focus {
+    outline: 0;
+}
+
+.__checkbox {
+    top: 0px !important;
+    font-size: 14px !important;
+    color: black !important;
+    font-family: Sans-Serif;
+    font-style: unset !important;
+}
+
+input:focus ~ span,
+textarea:focus ~ span {
+    width: 100%;
+    -webkit-transition: all 0.075s ease;
+    transition: all 0.075s ease;
+}
+
+textarea {
+    width: 100%;
+    min-height: 8em;
+}
+
+.input-container {
+    width: 650px;
+    max-width: 100%;
+    margin: 0px auto 0px auto;
+}
+
+.submit-btn {
+    border: 0px;
+    padding: 7px 35px;
+    border-radius: 60px;
+    display: inline-block;
+    background-color: $primary_color;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06),
+    0 2px 10px 0 rgba(0, 0, 0, 0.07);
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(1px);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.10),
+    0 1px 1px 0 rgba(0, 0, 0, 0.09);
+    background: #f6821f;
+}
+
+@media (max-width: 1200px) {
+    .submit-btn {
+        float: none;
+        text-align: center;
+    }
+}
+
+input[type=checkbox] + label {
+    color: #ccc;
+    font-style: italic;
+}
+
+input[type=checkbox]:checked + label {
+    color: #f00;
+    font-style: normal;
+}
+
+.msg {
+    display: -webkit-inline-box;
+    padding-left: 2px;
+}
+.errors {
+    color: red;
+    font-size: 12px;
+    display: block;
+}
+
+.errors-msg {
+    max-width: 94%;
+    margin-left: 3%;
+    width: 650px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.problem {
+    font-size: 20px;
+    color: $primary_color;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 15px 0 15px 0;
+}
+
+.radio-input {
+    margin-right: 5px;
+}
+
+.title-radio {
+    font-size: 1.5rem;
+}
+
+.title-p {
+    padding-left: 10px;
+}
+
+.custom-file-inputt {
+    color: transparent;
+
+}
+
+.custom-file-inputt::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.custom-file-inputt::before {
+    content: "Upload File";
+    color: #fff;
+    display: inline-block;
+    background: $primary_color;
+    padding: 5px 10px;
+    margin-top: 5px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    font-weight: 400;
+    border-radius: 2px;
+    outline: none;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.custom-file-inputt:focus {
+    outline: none !important;
+}
+
+.custom-file-inputt:active::before {
+    transform: scale(.9) translate(0px, 2px);
+    box-shadow: inset 4px 4px 5px 0px rgba(0, 0, 0, 0.20);
+    background-color: $color-orange;
+
+}
+
+.checkbox {
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-gap: 0.5em;
+    font-size: 14px;
+    color: $color-orange;
+
+    &--disabled {
+        color: var(--disabled);
+    }
+
+    .radio__label {
+        color: black;
+        line-height: 20px;
+    }
+}
+
+.__text_check{
+    font-size: 20px!important;
+    font-weight: 700;
+}
+
+.__text_li{
+    font-size: 14px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.__mr_check{
+    margin-top: 20px;
+}
+
+.checkbox__control {
+    display: inline-grid;
+    width: 1em;
+    height: 1em;
+    border-radius: 0.25em;
+    border: 0.1em solid currentColor;
+
+    svg {
+        transition: transform 0.1s ease-in 25ms;
+        transform: scale(0);
+        transform-origin: bottom left;
+    }
+}
+
+.checkbox__input {
+    display: grid;
+    grid-template-areas: "checkbox";
+    margin-top: 3px;
+
+    > * {
+        grid-area: checkbox;
+    }
+
+    input {
+        opacity: 0;
+        width: 1em;
+        height: 1em;
+
+        &:focus + .checkbox__control {
+            box-shadow: 0 0 0 0.05em #fff, 0 0 0.15em 0.1em currentColor;
+        }
+
+        &:checked + .checkbox__control svg {
+            transform: scale(1);
+        }
+
+        &:disabled + .checkbox__control {
+            color: var(--disabled);
+        }
+    }
+}
+.button-send-member{
+    margin-bottom: 25px;
+}
+.ul-cam-doan{
+    margin-bottom: unset !important;
+}
+
+.__body {
+    display: grid;
+    place-content: start;
+    grid-gap: 1rem;
+    padding: 0;
+    line-height: 1;
+    margin-bottom: 10px;
+}

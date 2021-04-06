@@ -1,0 +1,9 @@
+{
+    "name": "PostEvents",
+    "namespace": "Platform\\PostEvents\\",
+    "provider": "Platform\\PostEvents\\Providers\\PostEventsServiceProvider",
+    "author": "N/A",
+    "url": "N/A",
+    "version": "1.0",
+    "description": "The description for module post_events"
+}

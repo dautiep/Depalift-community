@@ -1,0 +1,14 @@
+html, body {
+    padding: unset;
+    margin: unset;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: $color-dark;
+    a {
+        color: $color-dark;
+    }
+}
+
+@media only screen and (max-width: 1199px){
+    
+}

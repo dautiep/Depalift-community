@@ -1,0 +1,9 @@
+{
+    "name": "MemberOrganize",
+    "namespace": "Platform\\MemberOrganize\\",
+    "provider": "Platform\\MemberOrganize\\Providers\\MemberOrganizeServiceProvider",
+    "author": "N/A",
+    "url": "N/A",
+    "version": "1.0",
+    "description": "The description for module member_organize"
+}

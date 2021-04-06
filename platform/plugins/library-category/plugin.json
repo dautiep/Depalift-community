@@ -1,0 +1,9 @@
+{
+    "name": "LibraryCategory",
+    "namespace": "Platform\\LibraryCategory\\",
+    "provider": "Platform\\LibraryCategory\\Providers\\LibraryCategoryServiceProvider",
+    "author": "N/A",
+    "url": "N/A",
+    "version": "1.0",
+    "description": "The description for module library_category"
+}

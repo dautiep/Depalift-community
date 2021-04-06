@@ -1,0 +1,89 @@
+select{
+    -webkit-appearance: none !important;
+}
+input[type="date"]{
+    -webkit-appearance: none !important;
+}
+.nav-pills{
+    .nav-link.active{
+        background-color: #f6821f !important;
+    }
+    .show{
+        background-color: #f6821f !important;
+    }
+}
+.nav-link-tab{
+    background-color: $primary_color;
+}
+.text-black{
+    display: block;
+    line-height: 25px;
+;
+    a{
+        color: $primary_color !important;
+        &:hover{
+            color: #f6821f !important;
+        }
+    }
+}
+.item--nhucau{
+    @include maxWidth(991){
+        height: auto;
+    }
+    height: 30px;
+    line-height: 17px;
+}
+.activity-main{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+
+    @include maxWidth(991){
+        display: block;
+    }
+
+    &__left{
+        flex: 50%;
+        &-title{
+            font-weight: bold;
+            font-size: 16px;
+
+            @include maxWidth(991){
+                text-align: left;
+            }
+        }
+    }
+
+    &__right{
+        flex: 50%;
+        margin-left: 35px;
+
+        @include maxWidth(991){
+            text-align: left;
+            margin-left: 0;
+        }
+    }
+    
+}
+table{
+    .year{
+        width: 25%;
+        text-align: center;
+
+        &--item{
+            border: none;
+            font-weight: bold;
+            width: 100% !important;
+            text-align: center;
+        }
+
+    }
+    .value--item{
+        border: none;
+        width: 100% !important;
+        text-align: center;
+    }
+    .san-luong-than{
+        font-weight: bold;
+    }
+}

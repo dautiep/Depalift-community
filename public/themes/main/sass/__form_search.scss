@@ -1,0 +1,67 @@
+.search-page{
+    margin-top: 30px;
+    &_header{
+        color: $primary_color;
+        &__title{
+            font-size: 25px;
+        }
+    }
+    .result_search{
+        margin-top: 15px;
+    }
+    .search__content{
+        margin-top: 15px;
+        margin-bottom: 30px;
+        &_form{
+            @include maxWidth(489){
+                width: 100%;
+            }
+        }
+
+        .search__input{
+            @include minWidth(380){
+                width: 350px;
+            }
+            @include maxWidth(489){
+                width: 100%;
+            }
+        }
+        .search__button{
+            background: $primary_color;
+            color: white;
+            border: none;
+            margin-left: 10px;
+            padding: 5px;
+            width: 100px;
+            border-radius: 6px;
+            @include maxWidth(489){
+                margin-left: 0;
+            }
+            &:hover{
+                background: $color-orange;
+            }
+        }
+    }
+    .result_content_search{
+        &_list{
+            .search_item{
+                &_des{
+                    &__link{
+                        color: $primary_color;
+                        font-size: 18px;
+                        &:hover{
+                            text-decoration: none;
+                            color: $color-orange;
+                        }
+                    }
+                    &__content{
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                    }
+                }
+            }
+        }
+    }
+}

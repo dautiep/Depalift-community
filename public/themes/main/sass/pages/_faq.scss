@@ -1,0 +1,48 @@
+.title-section{
+    .text{
+        font-size: 30px;
+        text-align: center;
+    }
+    .item-faq{
+        margin-bottom: 30px;
+        // padding: 5px;
+        .item-artical{
+            margin-bottom: 15px;
+            .icon{
+                color: $primary_color;
+                font-size: 18px;
+                display: flex;
+                p{
+                    margin-left: 5px;
+                    font-weight: bold;
+                }
+            }
+        }
+        .item-excerpt{
+            color: #5e5e5e;
+            font-size: 14px;
+            span{
+                color: $primary_color;
+                font-weight: 600;
+            }
+            .small-content{
+                margin-left: 5px;
+            }
+            .test-right{
+                float: right;
+                margin-top: 4px;
+                margin-right: 14px;
+                .full-content{
+                    background: $primary_color;
+                    color: #fff;
+                    font-size: 13px;
+                    padding: 5px;
+                    text-decoration: none;
+                    &:hover{
+                        background-color: $color-orange;
+                    }
+                }
+            }
+        }
+    }
+}

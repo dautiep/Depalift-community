@@ -1,0 +1,9 @@
+{
+    "name": "CategoryAssociates",
+    "namespace": "Platform\\CategoryAssociates\\",
+    "provider": "Platform\\CategoryAssociates\\Providers\\CategoryAssociatesServiceProvider",
+    "author": "N/A",
+    "url": "N/A",
+    "version": "1.0",
+    "description": "The description for module category_associates"
+}

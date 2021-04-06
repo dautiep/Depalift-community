@@ -1,0 +1,62 @@
+.thanhvien-huba {
+    background:#1e3948;
+    padding-bottom: 2.143rem;
+    padding-top: 2.143rem;
+    //border-bottom: 1px solid white;
+    img{
+        width: 100%;
+    }
+
+    .container{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    h3{
+        font-size: 1.286rem;
+        font-weight: 700;
+        position: relative;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .logo-slider{
+        margin-right: 15px;
+        margin-left: 12px;
+        img{
+            background-color: #fff;
+            border-radius: 5px;
+        }
+    }
+
+    .logo-slider .slick-slide{  
+        margin: 10px 10px 10px 10px;
+    }
+
+    .slick-dotted.slick-slider {
+        margin-bottom: -20px;
+    }
+
+    .slick-dots li.slick-active button:before{
+        color: #f6821f;
+    }
+
+    .slick-dots{
+        visibility: hidden;
+    }
+
+    .slick-next:before,
+    .slick-prev:before{
+        color: #f6821f;
+        font-size: 24px;
+        visibility: hidden;
+    }
+
+    .item:hover{
+        display: block;
+        box-shadow: 0 5px 8px rgba(15, 14, 14, 0.2);
+        animation: pulse;
+        animation-duration: 700ms;
+    }
+}

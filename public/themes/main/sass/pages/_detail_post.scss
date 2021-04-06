@@ -1,0 +1,176 @@
+.news-detail {
+    &-title {
+        font-size: 1.429rem;
+        color: $primary_color;
+        line-height: 1.3;
+        margin: 0 0 1rem;
+    }
+    &-time {
+        margin-bottom: 10px;
+        color: #999;
+        font-size: 0.8571rem;
+        .fa-calendar {
+            font-weight: 500 !important;
+        }
+    }
+    &-content {
+        .content-table {
+            border: none;
+            border-spacing: 0;
+            border-collapse: collapse;
+            &-td {
+                padding: 10px;
+                &-span {
+                    font-size: 14px;
+                    color: $primary_color;
+                }
+            }
+        }
+    }
+    &-text {
+        margin: 6pt 0in 0.0001pt;
+        text-align: justify;
+        &-span {
+            font-size: 10pt;
+        }
+    }
+    &-footer {
+        text-align: right;
+    }
+    &-social {
+        margin: 25px 0;
+        text-align: left;
+        .face-share {
+            margin-left: 10px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 5px;
+            margin-right: 10px;
+            vertical-align: top;
+            background: $primary_color;
+            padding: 4px;
+            border-radius: 0.513rem;
+            &-link {
+                text-decoration: none;
+            }
+        }
+        .twitter-share {
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 5px;
+            margin-right: 5px;
+            vertical-align: top;
+            background: $primary_color;
+            padding: 4px;
+            border-radius: 0.513rem;
+            &-link {
+                text-decoration: none;
+            }
+        }
+    }
+    .news-other {
+        &-title {
+            font-size: 1.429rem;
+            color: $primary_color;
+            margin: 0 0 1rem;
+        }
+        &-item {
+            margin-bottom: 20px;
+            &-link {
+                display: flex;
+            }
+            &-content {
+                padding: 10px;
+                background: #ededed;
+            }
+            &-subtitle {
+                margin: 0.5rem 0;
+                font-size: 1.143rem;
+                font-weight: 700;
+                line-height: 1.3;
+                height: 40px;
+                &-link {
+                    color: black;
+                    text-decoration: none;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    &:hover {
+                        color: $color-orange;
+                    }
+                }
+            }
+            &-detail {
+                margin-bottom: 10px;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+            }
+            @include maxWidth(767) {
+                width: 100%;
+            }
+
+            
+            
+        }
+    }
+
+    .shine-detail{
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        &:after{
+        content: '';
+        position: absolute;
+        //pointer-events: none;
+        top: -110%;
+        left: -210%;
+        width: 100%;
+        height: 200%;
+        opacity: 0;
+        background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+        -webkit-transform: skewX(-25deg);
+        transform: skewX(-25deg);
+        }
+        &:hover:after {
+            opacity: 1;
+            top: 0;
+            left: 100%;
+            transition-property: left, top, opacity;
+            transition-duration: 1.5s, 1.5s, .3s;
+            transition-timing-function: ease;
+        }
+    }
+}
+
+.image-library{
+    align-items: center;
+    text-align: center;
+}
+
+.myFancyBox .fancybox-thumbs {
+    top: auto;
+    width: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 95px;
+    padding: 10px 10px 5px 10px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.3);
+  }
+   
+  .myFancyBox .fancybox-show-thumbs .fancybox-inner {
+    right: 0 !important;
+    bottom: 95px !important;
+  }
+   
+  .fancybox-show-thumbs .fancybox-inner {
+      right: 0px !important;
+      bottom: 98px;
+  }

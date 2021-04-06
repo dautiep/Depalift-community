@@ -1,0 +1,29 @@
+.breadcrumb {
+    background: none;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    padding: 0.6429rem 0;
+    &-sub-main {
+        float: left;
+        a {
+            color: #666;
+            &:hover{
+                color: $color-orange;
+                text-decoration: none;
+            }
+        }
+    }
+    &-sub {
+        float: left;
+        margin-left: 10px;
+        a {
+            color: #666;
+            font-size: 0.813rem;
+            &:hover{
+                color: $color-orange;
+                text-decoration: none;
+            }
+        }
+    }
+}

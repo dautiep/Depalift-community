@@ -1,0 +1,9 @@
+{
+    "name": "CategoryTraining",
+    "namespace": "Platform\\CategoryTraining\\",
+    "provider": "Platform\\CategoryTraining\\Providers\\CategoryTrainingServiceProvider",
+    "author": "N/A",
+    "url": "N/A",
+    "version": "1.0",
+    "description": "The description for module category_training"
+}

@@ -1,0 +1,6 @@
+.register_member{
+    color: $primary_color !important;
+    &:hover{
+        color: $color-orange !important;
+    }
+}

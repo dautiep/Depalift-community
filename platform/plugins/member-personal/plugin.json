@@ -1,0 +1,9 @@
+{
+    "name": "MemberPersonal",
+    "namespace": "Platform\\MemberPersonal\\",
+    "provider": "Platform\\MemberPersonal\\Providers\\MemberPersonalServiceProvider",
+    "author": "N/A",
+    "url": "N/A",
+    "version": "1.0",
+    "description": "The description for module member_personal"
+}
